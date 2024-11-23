@@ -170,8 +170,8 @@ outra = nomeCompleto.split(', ')
 print(outra)
 
 # 10 - Len
-email = 'doug@gmail.com'
-print(len(email))
+# email = 'doug@gmail.com'
+# print(len(email))
 
 # 11
 # 11.1 - Lista
