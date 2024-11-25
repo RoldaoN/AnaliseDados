@@ -309,13 +309,144 @@ Conte quantas vezes cada letra aparece em uma palavra e exiba o resultado.
 
 palavra = "banana"
 '''
-cont = 0
-palavra = "banana"
-letra = palavra.split()
-for letra in palavra:
-    iguais = letra == letra[:-1]
-    print(iguais)
-    # print(letra)
-    # if letra == iguais :
-    #     cont = cont + 1
-    #     print(f' A letra {letra} aparece {cont}')
+# palavra = "banana"
+# contagem_letras = {}
+# for letra in palavra:
+#   if letra in contagem_letras:
+#     contagem_letras[letra] += 1
+#   else:
+#     contagem_letras[letra] = 1
+
+# for letra, contagem in contagem_letras.items():
+#   print(f"A letra '{letra}' aparece {contagem} vezes.")
+
+
+'''
+A partir da 24 a gente usa while
+
+Atividade 24 - Perguntar o nome até sair
+
+Escreva um programa que peça o nome de uma pessoa repetidamente.
+O programa deve parar quando a pessoa digitar "sair".
+'''
+# nome = input('Digite seu nome ou digite sair para sair: ')
+# while nome != 'sair':
+#     nome = input('Digite seu nome ou digite sair para sair: ')
+
+
+'''
+Atividade 25 - Adivinhe o número
+
+Escreva um programa em que o computador tenha um número secreto
+(por exemplo, 7) e o jogador deve adivinhar. O programa continua
+ até o jogador acertar.
+'''
+# import random
+# secreto = random.randint(0,100)
+# print(secreto)
+# tentativa = int(input('Digite sua primeira tentativa: '))
+# while secreto != tentativa:
+#     tentativa = int(input('Digite sua próxima tentativa: '))
+
+
+'''
+Atividade 26 - Corrigir dados até que estejam certos
+rie um programa que peça ao usuário para digitar um e-mail
+válido. O e-mail deve conter "@" e ".". O programa continua
+pedindo até que o e-mail seja válido.
+'''
+# email = input('Digite seu email')
+# arroba = '@' in email
+# ponto = email.endswith('.com')
+# print (arroba, ponto)
+# while arroba != ponto:
+#     email = input('Digite um email valido')
+#     arroba = '@' in email
+#     ponto = email.endswith('.com')
+# print('Email valido!')
+
+
+'''
+Atividade 27 - Soma de números positivos
+
+Peça ao usuário para digitar números. Some os números digitados,
+ mas pare o programa se o usuário digitar um número negativo.
+'''
+# numeros = []
+# tentativa = int(input('Digite um número para comecarmos: '))
+# while tentativa > 0:
+#     numeros.append(tentativa)
+#     soma = sum(numeros)
+#     tentativa = int(input('Digite um número para somarmos: '))
+# print(f'O resultado final foi de {soma}')
+
+
+'''
+Atividade 28 - Cálculo de média
+
+Peça notas ao usuário. Continue pedindo até que o usuário digite
+ -1. Calcule e mostre a média das notas.
+'''
+# notas = []
+# cont = 0
+# tentativa = int(input('Digite um número para comecarmos: '))
+# while tentativa > 0:
+#     notas.append(tentativa)
+#     cont += 1
+#     soma = sum(notas)
+#     media = soma/cont
+#     tentativa = int(input('Digite um número para somarmos: '))
+# print(f'O resultado final foi de {media}')
+
+
+'''
+Atividade 29 - Caixa eletrônico
+
+Simule um caixa eletrônico que permite saques até que o saldo
+chegue a 0. O programa deve continuar pedindo o valor do saque
+enquanto houver saldo disponível.
+'''
+# saldo = 2300
+# retirar = int(input('Quando deseja sacar? '))
+# saldo  = saldo - retirar
+# while saldo > 0:
+#     retirar = int(input('Deseja sacar mais quanto? '))
+#     saldo  = saldo - retirar
+
+
+'''
+Atividade 30 - Teste de conhecimento com pontuação
+
+Crie um programa que faça uma série de perguntas ao usuário.
+Para cada resposta correta, ele ganha 1 ponto. O programa deve
+continuar perguntando até que todas as questões sejam respondidas
+ ou o usuário digite "sair". No final, exiba a pontuação total.
+
+perguntas = [
+    {"pergunta": "Qual é a capital do Brasil?", "resposta": "Brasília"},
+    {"pergunta": "Quantos dias tem um ano bissexto?", "resposta": "366"},
+    {"pergunta": "Qual é o maior oceano do mundo?", "resposta": "Pacífico"},
+]
+'''
+# pontos = 0
+# resposta2 = 0
+# while pontos < 4 or resposta == 'sair':
+#     resposta = input('Qual a capital do Brail? ')
+#     if resposta == 'Brasília':
+#         print('Parabéns você acertou!')
+#         pontos += 1
+#     else:
+#         print('Resposta errada.')
+#     resposta2 = int(input('Quantos dias tem um ano bissexto? '))
+#     if resposta2 == 366:
+#         print('Parabéns você acertou!')
+#         pontos += 1
+#     else:
+#         print('Resposta errada.')
+#     resposta3 = input('Qual o maior oceano do planeta? ')
+#     if resposta3 == 'Pacífico':
+#         print('Parabéns você acertou!')
+#         pontos +=1
+#     else:
+#         print('Resposta errada.')
+# print('Fim de jogo!')
