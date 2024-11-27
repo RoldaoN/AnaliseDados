@@ -46,10 +46,10 @@ Escreva um programa que imprima cada PALAVRA da frase em uma linha.
 
 Dica: Use o método .split()
 '''
-frase = "Estou estudando python"
-palavras = frase.split()
-for palavra in palavras:
-    print(palavra)
+# frase = "Estou estudando python"
+# palavras = frase.split()
+# for palavra in palavras:
+#     print(palavra)
 
 
 '''
