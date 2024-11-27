@@ -178,8 +178,7 @@ As notas disponíveis serão as de 1, 5, 10, 50 e 100 reais. O valor mínimo é 
     Exemplo 1: Para sacar a quantia de 256 reais, o programa fornece duas notas de 100, uma nota de 50, uma nota de 5 e uma nota de 1;
     Exemplo 2: Para sacar a quantia de 399 reais, o programa fornece três notas de 100, uma nota de 50, quatro notas de 10, uma nota de 5 e quatro notas de 1.
 '''
-# def dinheiro ():
-#     saque = int(input('Qual o valor que gostaria de sacar? '))
+# def dinheiro (valor):
 #     centena = saque//100
 #     dezena = (saque%100)//10
 #     nota50 = dezena//5
@@ -188,21 +187,20 @@ As notas disponíveis serão as de 1, 5, 10, 50 e 100 reais. O valor mínimo é 
 #     nota5 = unidades//5
 #     nota1 = unidades%5
 #     if saque>=10 and saque<=600:
-#         dinheiro
 #     #print('nota 100 - ', centena, '|dezenas - ', dezena, '|notas de 50 - ', nota50, '|unidades - ', unidades, '|notas de 10', nota10, '|notas de 5', nota5, '|notas de 1', nota1)
 #         if centena != 0 and nota50 != 0 and nota5 != 0 and nota1 != 0:
-#             notas = print('A máquina fornecerá a você ',centena, 'notas de R$ 100, ', nota50, 'notas de R$50,00, ', nota10, 'notas de R$10,00', nota5, 'notas de R$5,00 e ', nota1, 'notas de R$1,00')
+#             print('A máquina fornecerá a você ',centena, 'notas de R$ 100, ', nota50, 'notas de R$50,00, ', nota10, 'notas de R$10,00', nota5, 'notas de R$5,00 e ', nota1, 'notas de R$1,00')
 #         elif centena != 0 and nota50 == 0 and nota10 != 0:
-#             notas = print('A máquina fornecerá a você ',centena, 'notas de R$ 100, ', nota10, 'notas de R$10,00', nota5, 'notas de R$5,00 e ', nota1, 'notas de R$1,00')
+#             print('A máquina fornecerá a você ',centena, 'notas de R$ 100, ', nota10, 'notas de R$10,00', nota5, 'notas de R$5,00 e ', nota1, 'notas de R$1,00')
 #         elif centena == 0 and nota50 != 0:
-#             notas = print('A máquina fornecerá a você ', nota50, 'notas de R$50,00, ',nota10,'notas de R$10,00', nota5, 'notas de R$5,00 e ', nota1, 'notas de R$1,00')
+#             print('A máquina fornecerá a você ', nota50, 'notas de R$50,00, ',nota10,'notas de R$10,00', nota5, 'notas de R$5,00 e ', nota1, 'notas de R$1,00')
 #         else:
-#             notas = print('A máquina fornecerá a você ',nota10,'notas de R$10,00', nota5, 'notas de R$5,00 e ', nota1, 'notas de R$1,00')
+#             print('A máquina fornecerá a você ',nota10,'notas de R$10,00', nota5, 'notas de R$5,00 e ', nota1, 'notas de R$1,00')
 #     else:
-#         notas = print('Valor de saque invalodo, por favor tente novamente.')
-#     return notas
+#         print('Valor de saque invalodo, por favor tente novamente.')
 
-# print(dinheiro())
+# saque = int(input('Qual o valor que gostaria de sacar? '))
+# dinheiro(saque)
 
 # if saque>=10 and saque<=600:
 #     dinheiro
@@ -430,9 +428,36 @@ R$ 1.000,00     0               1                       R$  1.000,00
 R$ 1.100,00     100             3                       R$    366,00
 R$ 1.150,00     150             6                       R$    191,67
 '''
-divida = float(input('Digite o valor da divida'))
-for parcela in range(0,12,3):
-    for juros in range(0,25,5):
-        juros1 = divida*(juros/100)
-        parcelas = juros/parcela
-        print(f'Valor da divida - juros - parcelas valor da aprcela\n{juros1}')
+# divida = float(input('Digite o valor da divida'))
+# for parcela in range(0,12,3):
+#     for juros in range(0,25,5):
+#         juros1 = divida*(juros/100)
+#         parcelas = juros/parcela
+#         print(f'Valor da divida - juros - parcelas valor da aprcela\n{juros1}')
+
+
+# soma = []
+# for x in range(1,101):
+#     soma.append(int(x))
+#     result = sum(soma)
+# print(result)
+
+
+# soma = 0
+# for x in range(1,101):
+#     soma = soma + x
+# print(s
+
+# from modulos.moduloTeste import revisaTexto
+# texto = input('Digite o texto: ')
+# palavra = input('Digite uma palavra para verifica-la no texto: ')
+# numero = revisaTexto(texto,palavra)
+# print(f'A palavra {palavra} aparece {numero} vezes no texto')
+
+# from exercicios_25_11_2024 import contaPalavra
+# frase = input('Digite uma frase: ')
+# contaPalavra(frase)
+
+
+email = 'doug@gmail.com'
+print(len(email))

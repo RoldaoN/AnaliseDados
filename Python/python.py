@@ -485,3 +485,10 @@ else:
   print('reprovado')
 '''
 
+
+'''
+16 - Função
+É uma sequência nomeada de instruções que executa operações no computador.
+Ao definir uma função, você especifica o nome e a sequência da instruções.
+Depois pode chamar a função pelo nome.
+'''

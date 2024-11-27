@@ -46,10 +46,10 @@ Escreva um programa que imprima cada PALAVRA da frase em uma linha.
 
 Dica: Use o método .split()
 '''
-# frase = "Estou estudando python"
-# palavras = frase.split()
-# for palavra in palavras:
-#     print(palavra)
+frase = "Estou estudando python"
+palavras = frase.split()
+for palavra in palavras:
+    print(palavra)
 
 
 '''
@@ -276,8 +276,7 @@ palavras = ["arara", "python", "radar", "palavra", "ana"]
 # palavras = ["arara", "python", "radar", "palavra", "ana"]
 # for palavra in palavras:
 #     if palavra == palavra[::-1]:
-#         palin = palavra
-#         print(f'A palavra {palin} é um palindromo')
+#         print(f'A palavra {palavra} é um palindromo e está na posição {indice}')
 
 
 '''
@@ -429,24 +428,29 @@ perguntas = [
 ]
 '''
 # pontos = 0
-# resposta2 = 0
-# while pontos < 4 or resposta == 'sair':
+# while pontos < 3:
 #     resposta = input('Qual a capital do Brail? ')
 #     if resposta == 'Brasília':
 #         print('Parabéns você acertou!')
 #         pontos += 1
+#     elif resposta == 'sair':
+#         break
 #     else:
 #         print('Resposta errada.')
-#     resposta2 = int(input('Quantos dias tem um ano bissexto? '))
-#     if resposta2 == 366:
+#     resposta2 = input('Quantos dias tem um ano bissexto? ')
+#     if resposta2 == '366':
 #         print('Parabéns você acertou!')
 #         pontos += 1
+#     elif resposta2 == 'sair':
+#         break
 #     else:
 #         print('Resposta errada.')
 #     resposta3 = input('Qual o maior oceano do planeta? ')
 #     if resposta3 == 'Pacífico':
 #         print('Parabéns você acertou!')
 #         pontos +=1
+#     elif resposta3 == 'sair':
+#         break
 #     else:
 #         print('Resposta errada.')
 # print('Fim de jogo!')
