@@ -459,5 +459,31 @@ R$ 1.150,00     150             6                       R$    191,67
 # contaPalavra(frase)
 
 
-email = 'doug@gmail.com'
-print(len(email))
+# email = 'doug@gmail.com'
+# print(len(email))
+
+
+'''
+Atividade 12
+
+Crie uma função chamada converter_temperatura que receba uma
+temperatura e o tipo de conversão desejada (Celsius para
+Fahrenheit, Celsius para Kelvin, Fahrenheit para Celsius, etc.).
+Use um parâmetro adicional para determinar a conversão.
+'''
+# from modulos.moduloTeste import conversaoTemp
+# temp = float(input('Digite a temperatura desejada: '))
+# conversaoTemp(temp)
+
+
+carro = {
+    'marca':'vw',
+    'modelos': ['Gol', 'Polo', 'EcoSport'],
+    'cor':'preto'
+}
+print(carro['modelos'][0])
+
+# 13.7 - Pop
+# Podemos usar o pop para tirar um itém do dicionário
+carro.pop('marca')
+print(carro)

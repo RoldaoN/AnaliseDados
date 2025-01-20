@@ -320,11 +320,11 @@ Crie uma função chamada reverter_palavras que receba uma frase
 e retorne a mesma frase com as palavras em ordem invertida.
 A função não deve usar métodos prontos como split() ou join().
 '''
-# def revertePalavra(frase):
-#     frase1 = frase[::-1]
-#     print(frase1)
-# frase = input('Digite uma frase para vê-la ao contrário: ')
-# revertePalavra(frase)
+def revertePalavra(frase):
+    frase1 = frase[::-1]
+    print(frase1)
+frase = input('Digite uma frase para vê-la ao contrário: ')
+revertePalavra(frase)
 
 
 '''
@@ -335,11 +335,11 @@ inteiros positivos e verifique se o segundo número é o "espelho"
 do primeiro. Um número é espelho do outro se os dígitos de um
 estão na ordem inversa do outro.
 '''
-# def numeroEspelho(valor1,valor2):
-#     if valor1 == valor2[::-1]:
-#         print(f'O número {valor2} é um número espelho de {valor1}')
-#     else:
-#         print('Desculpe os números indicados não são número Espelho.')
-# valor1 = input('Digite o primeiro número: ')
-# valor2 = input('Digite no sehundo número ao qual deseja ver se é espelho do primeiro: ')
-# numeroEspelho(valor1,valor2)
+def numeroEspelho(valor1,valor2):
+    if valor1 == valor2[::-1]:
+        print(f'O número {valor2} é um número espelho de {valor1}')
+    else:
+        print('Desculpe os números indicados não são número Espelho.')
+valor1 = input('Digite o primeiro número: ')
+valor2 = input('Digite no sehundo número ao qual deseja ver se é espelho do primeiro: ')
+numeroEspelho(valor1,valor2)
